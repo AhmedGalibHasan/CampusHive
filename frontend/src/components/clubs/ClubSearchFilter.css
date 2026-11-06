@@ -1,0 +1,116 @@
+.club-search-filter {
+	background: linear-gradient(180deg, #ffffff, #f0fdf4);
+	border: 1px solid #dcfce7;
+	border-radius: 16px;
+	padding: 14px;
+	box-shadow: 0 8px 22px rgba(22, 163, 74, 0.06);
+}
+
+.search-section {
+	margin-bottom: 12px;
+}
+
+.search-input-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 12px;
+	border-radius: 14px;
+	background: #ffffff;
+	border: 1px solid #bbf7d0;
+}
+
+.search-icon {
+	width: 28px;
+	height: 28px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #bbf7d0, #a7f3d0);
+}
+
+.search-input {
+	flex: 1;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: #14532d;
+	background: transparent;
+}
+
+.clear-search-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid #dcfce7;
+	background: linear-gradient(180deg, #ffffff, #f0fdf4);
+	cursor: pointer;
+	color: #6b7280;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.filters-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	align-items: center;
+}
+
+.filter-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.filter-label {
+	font-size: 13px;
+	font-weight: 700;
+	color: #14532d;
+}
+
+.filter-buttons {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.filter-btn {
+	padding: 8px 12px;
+	border-radius: 12px;
+	border: 1px solid #bbf7d0;
+	background: linear-gradient(180deg, #ffffff, #f0fdf4);
+	color: #14532d;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.filter-btn.active {
+	background: linear-gradient(135deg, #bbf7d0, #a7f3d0);
+	border-color: #16a34a;
+}
+
+.category-filter-select {
+	padding: 8px 10px;
+	font-size: 13px;
+	border: 1px solid #bbf7d0;
+	border-radius: 12px;
+	background: #ffffff;
+	color: #14532d;
+	outline: none;
+}
+
+.clear-filters-btn {
+	margin-left: auto;
+	padding: 8px 12px;
+	border-radius: 12px;
+	border: 1px solid #bbf7d0;
+	background: linear-gradient(180deg, #dcfce7, #ffffff);
+	color: #14532d;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 700;
+}

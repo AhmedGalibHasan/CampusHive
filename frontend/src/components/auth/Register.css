@@ -1,0 +1,71 @@
+
+.auth-register-container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+	padding: 20px;
+}
+
+.auth-register-card {
+	background: white;
+	padding: 40px;
+	border-radius: 16px;
+	box-shadow: 0 10px 26px rgba(22, 163, 74, 0.08);
+	width: 100%;
+	max-width: 400px;
+}
+
+.auth-register-title {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #14532d;
+}
+
+.auth-register-error {
+	background: #fee2e2;
+	color: #dc2626;
+	padding: 12px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.auth-register-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.auth-register-input {
+	padding: 12px;
+	font-size: 14px;
+	border: 1px solid #bbf7d0;
+	border-radius: 8px;
+	outline: none;
+}
+
+.auth-register-button {
+	padding: 12px;
+	background: linear-gradient(180deg, #dcfce7, #ffffff);
+	color: #14532d;
+	border: 1px solid #bbf7d0;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.auth-register-link {
+	text-align: center;
+	margin-top: 20px;
+	color: #166534;
+}
+
+.auth-register-linkText {
+	color: #16a34a;
+	cursor: pointer;
+	text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+.rating-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.star {
+  font-size: 1.2rem;
+  color: #d1d5db;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+.star.half {
+  color: #fbbf24;
+  position: relative;
+}
+
+.star.half::after {
+  content: '★';
+  position: absolute;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #d1d5db;
+}
+
+.star.empty {
+  color: #d1d5db;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: #14532d;
+}
+
+.review-count {
+  font-size: 0.9rem;
+  color: #166534;
+}

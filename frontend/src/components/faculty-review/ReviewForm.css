@@ -1,0 +1,112 @@
+.review-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(22,163,74,0.06);
+  border: 1px solid #e5e7eb;
+  margin-bottom: 2rem;
+}
+
+.review-form h3 {
+  margin-bottom: 1.5rem;
+  color: #14532d;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #14532d;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22,163,74,0.1);
+}
+
+.star-rating {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.star-label {
+  cursor: pointer;
+  position: relative;
+}
+
+.star-label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.star-label .star {
+  font-size: 2rem;
+  color: #d1d5db;
+  transition: color 0.2s, transform 0.2s;
+}
+
+.star-label:hover .star,
+.star-label input[type="radio"]:checked ~ .star,
+.star-label .star.filled {
+  color: #fbbf24;
+  transform: scale(1.1);
+}
+
+.star-label input[type="radio"]:checked ~ .star {
+  color: #fbbf24;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #fecaca;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  background: linear-gradient(180deg, #dcfce7, #ffffff);
+  color: #14532d;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(22,163,74,0.08);
+}
+
+.submit-button:hover:not(:disabled) {
+  background: linear-gradient(180deg, #bbf7d0, #dcfce7);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22,163,74,0.15);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}

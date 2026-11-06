@@ -1,0 +1,115 @@
+.study-room-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 22px rgba(22,163,74,0.06);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.study-room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(22,163,74,0.12);
+}
+
+.study-room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.room-number-badge {
+  background: linear-gradient(180deg, #dcfce7, #ffffff);
+  color: #14532d;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #bbf7d0;
+  position: relative;
+  display: inline-block;
+}
+
+.message-notification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #dc2626;
+  color: white;
+  border-radius: 12px;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0 6px;
+  line-height: 1;
+}
+
+.message-notification-badge:empty {
+  display: none;
+}
+
+.occupancy-count {
+  color: #166534;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.study-room-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.study-room-topic {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #14532d;
+  font-weight: 600;
+}
+
+.study-room-creator {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.creator-name {
+  font-weight: 600;
+  color: #166534;
+}
+
+.study-room-location,
+.study-room-link {
+  font-size: 0.85rem;
+  color: #166534;
+  padding: 6px 12px;
+  background: #f0fdf4;
+  border-radius: 8px;
+  display: inline-block;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .study-room-card {
+    padding: 1rem;
+  }
+
+  .study-room-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+

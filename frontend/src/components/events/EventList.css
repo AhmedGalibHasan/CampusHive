@@ -1,0 +1,16 @@
+.event-card {
+	background: linear-gradient(180deg, #ffffff, #f0fdf4);
+	border: 1px solid #dcfce7;
+	border-radius: 16px;
+	padding: 18px;
+	box-shadow: 0 8px 22px rgba(22, 163, 74, 0.06);
+}
+
+.event-card h3 {
+	margin: 0 0 6px 0;
+	color: #14532d;
+}
+
+.eventList-deleteBtn {
+	margin-right: 10px;
+}

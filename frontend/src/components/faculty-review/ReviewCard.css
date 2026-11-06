@@ -1,0 +1,307 @@
+.review-card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 22px rgba(22,163,74,0.06);
+  border: 1px solid #e5e7eb;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.review-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(22,163,74,0.12);
+}
+
+.review-card.flagged {
+  opacity: 0.7;
+  border-left: 4px solid #f87171;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.review-meta {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #14532d;
+  margin-bottom: 0.25rem;
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.review-edited {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 0.15rem;
+}
+
+.review-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.review-owner-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.review-action-button {
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #14532d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.review-action-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22,163,74,0.12);
+}
+
+.review-action-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.review-action-button-danger {
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  background: linear-gradient(180deg, #fee2e2, #ffffff);
+}
+
+.review-edit-form {
+  margin-top: 0.25rem;
+}
+
+.review-edit-error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 10px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #fecaca;
+}
+
+.review-edit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 120px;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.review-edit-field label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: #14532d;
+  font-size: 0.9rem;
+}
+
+.review-edit-field input,
+.review-edit-field select,
+.review-edit-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbf7d0;
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.review-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.review-rating {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.review-rating .star {
+  font-size: 1.2rem;
+  color: #d1d5db;
+}
+
+.review-rating .star.filled {
+  color: #fbbf24;
+}
+
+.review-details {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.review-course-term {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.course {
+  font-weight: 600;
+  color: #14532d;
+  padding: 4px 12px;
+  background: linear-gradient(180deg, #f0fdf4, #ffffff);
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.term {
+  color: #166534;
+  font-size: 0.9rem;
+  padding: 4px 12px;
+  background: #f0fdf4;
+  border-radius: 8px;
+}
+
+.review-teacher {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+.review-content {
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.review-flags-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.flag-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.flag-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.flag-button-positive {
+  background: linear-gradient(180deg, #dcfce7, #ffffff);
+  color: #14532d;
+  border: 1px solid #bbf7d0;
+}
+
+.flag-button-positive:hover:not(:disabled) {
+  background: linear-gradient(180deg, #bbf7d0, #dcfce7);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(22,163,74,0.15);
+}
+
+.flag-button-negative {
+  background: linear-gradient(180deg, #fee2e2, #ffffff);
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.flag-button-negative:hover:not(:disabled) {
+  background: linear-gradient(180deg, #fecaca, #fee2e2);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220,38,38,0.15);
+}
+
+.flag-icon {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.flag-label {
+  font-size: 0.85rem;
+}
+
+.flag-counts {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.flag-count {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 12px;
+}
+
+.flag-count-positive {
+  color: #14532d;
+  background: linear-gradient(180deg, #f0fdf4, #ffffff);
+  border: 1px solid #bbf7d0;
+}
+
+.flag-count-negative {
+  color: #dc2626;
+  background: linear-gradient(180deg, #fef2f2, #ffffff);
+  border: 1px solid #fecaca;
+}
+
+.flag-count-icon {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.flag-button.flagged-active {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+.flag-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.flag-button:disabled:hover {
+  transform: none;
+}
+
+.flag-button-positive.flagged-active {
+  background: linear-gradient(180deg, #bbf7d0, #dcfce7);
+  border: 2px solid #86efac;
+}
+
+.flag-button-negative.flagged-active {
+  background: linear-gradient(180deg, #fecaca, #fee2e2);
+  border: 2px solid #f87171;
+}
